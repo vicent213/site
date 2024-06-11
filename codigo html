@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revo Cursos</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+      <nav>
+        <ul>
+            <li>
+                <a href="Contato.html">Contato</a>
+            </li>
+            <li>
+                <a href="Cursos.html">Cursos</a>
+            </li>
+        </ul>
+      </nav>  
+      <header>
+        <div class="center">
+            <img src="./img/780528.png"><img>
+        </div>
+        <h1>
+            REVO CURSOS
+        </h1>
+        <h2>
+            Anunciar nunca foi tão fácil
+        </h2>
+        <main>
+        </header>  
+            <section>
+                <h3>
+                    Sobre nós
+                </h3>
+                <p>
+                    Na era da transformação digital, 
+                    onde a inovação e a criatividade são fundamentais para o sucesso empresarial, 
+                    surge a equipe Visionários Digitais, um grupo apaixonado por tecnologia e movido pela busca constante de soluções inovadoras.
+                    Nossa equipe é composta por uma seleção dos melhores talentos em desenvolvimento de software. Com habilidades variadas que abrangem desde desenvolvimento web até aplicativos móveis, nossos desenvolvedores são mestres em transformar conceitos abstratos em produtos digitais de última geração.
+                </p>
+            </section>
+            <section>
+                <h3>
+                    Certificados Digitais
+                </h3>
+                <p>
+                    Na equipe Visionários Digitais, a busca pela excelência não é apenas uma aspiração, é uma realidade tangível que é reconhecida e validada através de certificados de prestígio. Esses certificados não são apenas distintivos de honra,
+                     mas também testemunhos tangíveis do nosso compromisso em oferecer serviços e produtos de qualidade excepcional. Aqui estão alguns dos certificados que adornam nosso portfólio:
+                </p>
+            </section>
+                 
+        </main>
+           
+        <footer>
+            <a href="https://discord.com/login"target="blank" rel="noopener noreferrer">
+                <img src="./img/3073764.webp" ></img>
+                <p>Discord</p>
+            </a>
+            <a href="https://www.whatsapp.com/?lang=pt_BR"target="blank" rel="noopener noreferrer">
+                <img src="./img/whatsapp.svg" ></img>
+                <p>Whatsapp</p>
+            </a>
+        </footer>
+</body>

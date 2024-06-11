@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revo Cursos</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header class="nav-container">
+        <nav class="nav-main">
+            <h1>REVO CURSOS</h1>
+            <div class="contact-link">contato</div>
+            <div class="courses-link">cursos</div>
+        </nav>
+    </header>
+    <main>
+        <section id="list-section" class="list-container">
+            <div class="card">
+                <h3>Google Ads Para Ecommerce</h3>
+                <p>Aprenda a trabalhar na principal ferramenta de anúncio para comerciantes</p>
+            </div>
+            <div class="card">
+                <h3>Google Tag Manager Para Ecommerce</h3>
+                <p>Otimize sua performance com o traqueamento perfeito</p>
+            </div>
+            <div class="card">
+                <h3>Google Analytics Para Ecommerce</h3>
+                <p>Gere insights e crie públicos valiosos para o seu negócio</p>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <a href="https://discord.com/login" target="blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-discord">
+                <p class="normal-text">Discord</p>
+            </i>
+        </a>
+        <a>
+            <i class="fa-brands fa-whatsapp">
+                <p class="normal-text">Whatsapp</p>
+            </i>
+        </a>
+    </footer>
+</body>
+
+</html>
+
+<script>
+    function generateText() {
+        fetch('conteudo.txt')
+            .then(response => response.text())
+            .then(data => {
+                const lines = data.split('\n');
+                document.getElementById('aboutUs').textContent = lines[0];
+                document.getElementById('digitalCertificates').textContent = lines[1];
+            });
+    }
+    window.onload = generateText;
+</script>
