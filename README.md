@@ -1,7 +1,6 @@
-Esse código não está pronto ainda.
+Última atualização: 11/06.
 
-o codigo.html está desatualizado (09/06/24) a versão index.html ainda não está funcional. Preciso passar algumas coisas do codigo.html para o index. 
-
-
-Qualquer texto deve ser colocado em conteudo.tx
-
+- Código organizado em módulos/pastas
+- Foi adicionado um padrão de largura máxima dos blocos de conteúdo html de 900px. Ver index.css para exemplo.
+- Pensei em adicionar botões de compra simulados, tanto para cada curso/card quanto um botão para comprar todos os cursos com desconto, algo asism.
+- Os modais são controlados por função js, e a importação do script no html é do tipo model, ou seja, os as classes e funcoes javascript são inicializadas através do main.js

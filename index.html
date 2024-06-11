@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Revo Cursos</title>
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/modal.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
@@ -19,21 +20,85 @@
     </header>
     <main>
         <section id="list-section" class="list-container">
-            <div class="card">
+            <div class="card card-google-ads">
                 <h3>Google Ads Para Ecommerce</h3>
                 <p>Aprenda a trabalhar na principal ferramenta de anúncio para comerciantes</p>
             </div>
-            <div class="card">
+            <div class="card card-google-tag">
                 <h3>Google Tag Manager Para Ecommerce</h3>
                 <p>Otimize sua performance com o traqueamento perfeito</p>
             </div>
-            <div class="card">
+            <div class="card card-google-an">
                 <h3>Google Analytics Para Ecommerce</h3>
                 <p>Gere insights e crie públicos valiosos para o seu negócio</p>
             </div>
         </section>
 
+        <section id="about-us-section" class="about-us-container">
+            <h2>Sobre Nós</h2>
+            <p>Na REVO Cursos, contamos com 6 anos de experiência no mercado de e-commerce, atuando tanto em projetos
+                próprios quanto prestando serviços para diversas marcas. Com mais de R$1.000.000 geridos em contas de
+                anúncio, trazemos uma combinação única de conhecimento prático de mercado e uma visão técnica
+                aprofundada, garantindo resultados excepcionais para nossos clientes.</p>
+                
     </main>
+
+    <!--INÍCIO estrutura modais controlada pelas funções js-->
+
+    <section id="modal-google-ads" class="modal-container-google-ads">
+        <div class="modal-box">
+            <div class="modal-content content-google-ads">
+                <h2 id="courseTitle">Google Ads: Ecommerce</h2>
+                <ul id="courseModules">
+                    <li>Módulo 1: Introdução ao Curso</li>
+                    <li>Módulo 2: Configuração de Contas e Ferramentas</li>
+                    <li>Módulo 3: Estratégias de Anúncios</li>
+                    <li>Módulo 4: Análise de Desempenho</li>
+                    <li>Módulo 5: Otimização Avançada</li>
+                </ul>
+                <p class="price">2x R$ 99</p>
+            </div>
+            <button id="modal-ads-close" class="btn"> fechar</button>
+        </div>
+    </section>
+
+    <section id="modal-google-tag" class="modal-container-google-tag">
+        <div class="modal-box">
+            <div class="modal-content content-google-tag">
+                <h2 id="courseTitle">Google Tag Manager: Ecommerce</h2>
+                <ul id="courseModules">
+                    <li>Módulo 1: Introdução ao Curso</li>
+                    <li>Módulo 2: Containers e Tags</li>
+                    <li>Módulo 3: Eventos e Gatilhos</li>
+                    <li>Módulo 4: Traqueamento Para Google Ads</li>
+                    <li>Módulo 5: Traqueamento Google Analytics</li>
+                </ul>
+                <p class="price">2x R$ 99</p>
+            </div>
+            <button id="modal-tag-close" class="btn"> fechar</button>
+        </div>
+    </section>
+
+    <section id="modal-google-an" class="modal-container-google-an">
+        <div class="modal-box">
+            <div class="modal-content content-google-an">
+                <h2 id="courseTitle">Google Analytics 4: Ecommerce</h2>
+                <ul id="courseModules">
+                    <li>Módulo 1: Introdução ao Curso</li>
+                    <li>Módulo 2: Entendendo a ferramenta</li>
+                    <li>Módulo 3: Eventos personalizados</li>
+                    <li>Módulo 4: Públicos personalizados para Google Ads</li>
+                    <li>Módulo 5: Relatórios e Paineis</li>
+                    <!-- Adicione mais módulos conforme necessário -->
+                </ul>
+                <p class="price">2x R$ 99</p>
+            </div>
+            <button id="modal-an-close" class="btn"> fechar</button>
+        </div>
+    </section>
+
+    <!--FIM estrutura modais controlada pelas funções js-->
+
     <footer>
         <a href="https://discord.com/login" target="blank" rel="noopener noreferrer">
             <i class="fa-brands fa-discord">
@@ -46,10 +111,16 @@
             </i>
         </a>
     </footer>
+    
+    <script type="module" src="./js/main.js"></script>
 </body>
 
 </html>
 
+
+<!--// Deixei comentado por enquanto pra não adicionar complexidade. 
+        Se houver necessidade de manter o código, criar um .js na pasta -->
+<!--
 <script>
     function generateText() {
         fetch('conteudo.txt')
@@ -62,3 +133,4 @@
     }
     window.onload = generateText;
 </script>
+ -->
