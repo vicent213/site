@@ -1,23 +1,31 @@
-.modal-container-google-ads {
+@keyframes animacaoModal {
+    0%{top: -100px;}
+    100%{top: 0px;}
+}
+
+.modal-container-google-ads, 
+.modal-container-google-tag,
+.modal-container-google-an {
     position: fixed;
     top: 0;
     left: 0;
     padding: 20px;
-
     background-color: rgba(0,0,0,0.5);
     height: 100vh;
     width: 100%;
     z-index: 1;
-
     display: none;
+    animation-name: animacaoModal;
+    animation-duration: 0.5s;
 }
 
-.modal-container-google-ads.active {
+.modal-container-google-ads.active,
+.modal-container-google-tag.active,
+.modal-container-google-an.active {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 
 .modal-box {
     height: 500px;
@@ -51,26 +59,6 @@
     justify-content: center;
 }
 
-.modal-container-google-tag {
-    position: fixed;
-    top: 0;
-    left: 0;
-    padding: 20px;
-
-    background-color: rgba(0,0,0,0.5);
-    height: 100vh;
-    width: 100%;
-    z-index: 1;
-
-    display: none;
-}
-
-.modal-container-google-tag.active {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .modal-container-google-an {
     position: fixed;
     top: 0;
@@ -84,10 +72,3 @@
 
     display: none;
 }
-
-.modal-container-google-an.active {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-

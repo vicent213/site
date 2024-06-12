@@ -3,8 +3,6 @@ import * as modalTagController from './modals/modal-tag-controller.js';
 import * as modalAnController from './modals/modal-an-controller.js';
 
 export function init() {
-
-    
     const googleAdsCard = document.querySelector(".card-google-ads");
     googleAdsCard.addEventListener('click', handleGoogleAdsCardLinkClick);
     console.log("page controller iniciado");
