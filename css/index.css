@@ -4,11 +4,17 @@
   padding: 0;
 }
 
+@keyframes animacaoPrincipal {
+  0%{opacity: 0;}
+  100%{opacity: 1;}
+}
+
 body,
 html {
   font-family: Arial, sans-serif;
   color: white;
   background-color: black;
+  scroll-behavior: smooth;
 }
 
 .nav-container {
@@ -28,6 +34,8 @@ html {
   align-items: center;
   justify-content: space-between;
   font-size: 10px;
+  animation-name: animacaoPrincipal;
+  animation-duration: 1s;
 }
 
 .nav-main h1 {
@@ -77,6 +85,9 @@ html {
   overflow-wrap: break-word;
   flex: 1 1 calc(50% - 40px); /* Ajuste para layout flexível */
   box-sizing: border-box;
+  cursor: pointer;
+  animation-name: animacaoPrincipal;
+  animation-duration: 2s;
 }
 
 .card:hover {
@@ -168,6 +179,11 @@ footer p {
   font-weight: 700;
   font-size: 14px;
   cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.btn:hover {
+  opacity: 0.8;
 }
 
 .price {
@@ -177,4 +193,21 @@ footer p {
   text-align: center;
 }
 
+::-webkit-scrollbar {
+  width: 8px; 
+}
 
+::-webkit-scrollbar-track {
+  background: #333; 
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #333; 
+  border-radius: 6px; 
+  border: 3px solid #f4f4f4bd; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #333333b9; 
+}
